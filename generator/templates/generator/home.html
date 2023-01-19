@@ -5,8 +5,9 @@
     <title>Home page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
-<body>
-<div class="container text-center">
+<body style="display: flex; align-items: center; flex-direction: column; min-height: 100vh">
+<div class="container text-center border border-danger" style="background-color: darkgray; display: flex; align-items: center; justify-content: center; flex-direction: column; min-width: 100%; min-height: 100vh">
+<div class="container text-center border border-primary" style="width: 500px; height: 500px; background-color: aquamarine">
     <h1>Password Generator</h1>
     <form action="generated_password">
         <select name="length">
@@ -34,6 +35,7 @@
     <form action="about_page">
         <button class="btn btn-primary">About page</button>
     </form>
+</div>
 </div>
 </body>
 </html>
